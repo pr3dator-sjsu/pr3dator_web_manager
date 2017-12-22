@@ -1,0 +1,6 @@
+{
+    "require": {
+        "auth0/auth0-php": "~5.0",
+        "vlucas/phpdotenv": "^2.4"
+    }
+}

@@ -1,0 +1,67 @@
+/*<?php
+
+  // Require composer autoloader
+  require __DIR__ . '/vendor/autoload.php';
+
+  require __DIR__ . '/dotenv-loader.php';
+
+  use Auth0\SDK\Auth0;
+
+  $domain        = getenv('AUTH0_DOMAIN');
+  $client_id     = getenv('AUTH0_CLIENT_ID');
+  $client_secret = getenv('AUTH0_CLIENT_SECRET');
+  $redirect_uri  = getenv('AUTH0_CALLBACK_URL');
+  $audience      = getenv('AUTH0_AUDIENCE');
+
+  if($audience == ''){
+    $audience = 'https://' . $domain . '/userinfo';
+  }
+
+  $auth0 = new Auth0([
+    'domain' => $domain,
+    'client_id' => $client_id,
+    'client_secret' => $client_secret,
+    'redirect_uri' => $redirect_uri,
+    'audience' => $audience,
+    'scope' => 'openid profile',
+    'persist_id_token' => true,
+    'persist_access_token' => true,
+    'persist_refresh_token' => true,
+  ]);
+
+  $userInfo = $auth0->getUser();
+if ($userInfo){
+ echo 'user info available';
+} else {
+ echo $userInfo->nickname;
+} 
+ echo 'end of user info test'; 
+
+?>
+
+<head> <b><font face="Arial" size="4" color="#FF0000">&lt;&lt;| MAIN MENU |&gt;&gt;</font></b><font face="Arial"><b><font size="4" color="#FF0000">
+</head>
+
+</font></b>
+
+<body link="#0000FF" vlink="#0000FF" text="#0000FF" bgcolor="#000080" alink="#0000FF" background="vision01.jpg" style="background-attachment: fixed">
+</font>
+<div>
+<font face="Verdana"><br><b><font color="#FF0000">&gt;&gt;</font></b>
+<a href="app_integration_users.php" target="main">API INTEGRATION
+</a></font>
+<p><font face="Verdana"><br><b><font color="#FF0000">&gt;&gt;</font></b>
+<a href="data_mng_users.php" target="main">DATA MANAGEMENT 
+</a><br>&nbsp;</font></p>
+<p><font face="Verdana"><b><font color="#FF0000">&gt;&gt;</font></b>
+<a href="search_results_page.php" target="main">SEARCH RESULTS </a><br>&nbsp;</font></p>
+<p><font face="Verdana"><b><font color="#FF0000">&gt;&gt;</font></b>
+<a href="order_status_update.php" target="main">ORDER STATUS UPDATE</a><br>&nbsp;</font></p>
+<p><font face="Verdana"><b><font color="#FF0000">&gt;&gt;</font></b>
+<a href="social_media_intg.php" target="main">SOCIAL MEDIA POSTING</a></font></p>
+<p>&nbsp;</p>
+<p align="left"><font face="Verdana"><u><font size="4" color="#FFFFFF">&gt;&gt; LOGOUT</font></u><font size="4"><a href="social_media_intg.php" target="main"><font color="#FFFFFF">
+</font></a></font></font><u><font size="4" face="Arial" color="#FFFFFF">&lt;&lt;<br>
+</font></u></p>
+<p>&nbsp;</div>
+</body>

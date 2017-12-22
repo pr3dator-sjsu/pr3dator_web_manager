@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>USER MANAGEMENT CONSOLE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container" ALIGN="center">
+  <h1>USER MANAGEMENT CONSOLE</h1> </div>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<!--legend>User Console</legend-->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">ADD USER</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="USERNAME" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">SET CREDENTIALS</label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="PASSWORD" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input For Modify User-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">MODIFY USER</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="USERNAME" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input Delete User-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">DELETE USER</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="USERNAME" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Submit Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submitbutton"></label>
+  <div class="col-md-4">
+    <button id="submitbutton" name="submitbutton" class="btn btn-primary">SUBMIT</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+</html>
